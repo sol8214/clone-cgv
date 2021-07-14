@@ -1,0 +1,136 @@
+body {
+    font-family: NanumGothic;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#header-top {
+    height: 60px;
+    overflow: hidden;
+}
+.logo {
+    position: absolute;
+    height:55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left-top {
+    float: left;
+}
+.right-top {
+    float: right;
+}
+.left-top li, .right-top li {
+    display: inline-block;
+}
+#gnb li {
+    text-align: center;
+    padding:15px 0;
+}
+#gnb > li:hover {
+    background: #ba000c;
+}
+#gnb li p {
+    opacity: 0;
+}
+#gnb li:hover p {
+    opacity: 1;
+    color: #fff;
+    font-size: 11px;
+}
+/*.header {
+    height: 148px;
+    min-width: 940px;
+    background: url(../images/bg_headerSub.gif) left bottom repeat-x;
+}*/
+#red {
+    border-top:2px solid #b5121b;
+}
+.menu {
+    float:left;
+    overflow: hidden;
+}
+.mall li {
+    float:left;
+    text-align: center;
+}
+.mall li p {
+    color:#303030;
+    font-size: 11px;
+}
+.mall li:hover p {
+    color: #b5121b;
+    font-size: 11px;
+    text-decoration: none;
+}
+.bg-black {
+    background: #000;
+}
+.pl-6 {
+    padding-left:60px;
+}
+.store {
+    float:left;
+}
+.academy li p {
+    color: #676767;
+    font-size:12px;
+}
+.solution li p {
+    color: #676767;
+    font-size:12px;
+}
+
+.news li p {
+    overflow: hidden;
+}
+.news li nobr {
+   float: right;
+   width:153px;
+}
+.news li p {
+   float: left;
+   color:#676767;
+   font-size:12px;
+   margin-bottom:4px;
+}
+
+.etc li {
+    display:inline-block;
+    text-align: center;
+    font-size:12px;
+    color:#676767;
+}
+.footer {
+    width: 100%;
+    min-width: 940px;
+    height: 115px;
+    padding: 33px 0 0 0;
+    background: #ba000c;
+}
+
+.sns {
+    margin-bottom:100px;
+}
+.sns li {
+    display:inline-block;
+}
+.footer {
+    width: 100%;
+    height: 120px;
+    background: #ba000c;
+
+}
+#footer-left a {
+    color:#ffeff0;
+    font-size: 12px;
+}
+.pl-8 {
+    padding-left:80px;
+}
+#footer-left p {
+    color:#be898b;
+    font-size:12px;
+}

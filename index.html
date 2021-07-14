@@ -1,52 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>클론코딩 할리스</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="script/jquery-3.6.0.js"></script>
-    <script src="script/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script/main.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클론코딩 할리스</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="script/jquery-3.6.0.js"></script>
+  <script src="script/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script/main.js"></script>
 </head>
+
 <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-sm">
-          <a class="navbar-brand col-xl-1" href="#">
-            <img src="images/nav1.png" alt="가맹문의">
-          </a>
-          <a class="navbar-brand col-xl-1" href="#">
-            <img src="images/nav2.png" alt="아카데미">
-          </a>
-          <a class="navbar-brand col-xl-1" href="#">
-            <img src="images/nav3.png" alt="기업특판">
-          </a>
-          <a class="navbar-brand col-xl-1" href="#">
-            <img src="images/logo.png" alt="로고">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="images/nav4.gif" alt="로그인">
-          </a>
-          <a class="" href="#">
-            <img src="images/nav5.gif" alt="가입">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="images/nav.6.gif" alt="문의">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="images/nav7.gif" alt="영문">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="images/nav8.gif" alt="중문">
-          </a>
-          <button class="navbar-toggler fixed-top" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-      </nav>
+  <div class="container">
+    <div class=header>
+      <div id="header-top">
+        <ul class="left-top" class="row">
+          <li class="col-md-3">
+            <a href="#"><img src="images/nav1.png" alt="가맹문의"></a>
+          </li>
+          <li class="col-md-3">
+            <a href="#"><img src="images/nav2.png" alt="아카데미"></a>
+          </li>
+          <li class="col-md-3">
+            <a href="#"><img src="images/nav3.png" alt="기업특판"></a>
+          </li>
+        </ul>
+        <h1 class="logo">
+          <img src="images/logo.png" alt="hollys">
+        </h1>
+        <ul class="right-top" class="row">
+          <li class="col-md-2">
+            <a href="#"><img src="images/nav4.gif" alt="멤버쉽로그인"></a>
+          </li>
+          <li class="col-md-2">
+            <a href="#"><img src="images/nav5.gif" alt="멤버쉽가입"></a>
+          </li>
+          <li class="col-md-2">
+            <a href="#"><img src="images/nav6.gif" alt="고객문의"></a>
+          </li>
+          <li class="col-md-2">
+            <a href="#"><img src="images/nav7.gif" alt="영문"></a>
+          </li>
+          <li class="col-md-2">
+            <a href="#"><img src="images/nav8.gif" alt="중문"></a>
+          </li>
+        </ul>
+      </div>
+      <div id="header-mid">
+        <nav>
+          <ul id="gnb" class="row">
+            <li class="col-md-2">
+              <a href="#"><img src="images/nav9.png" alt="메뉴"></a>
+              <p class="m-0">메뉴</p>
+            </li>
+            <li class="col-md-2">
+              <a href="#"><img src="images/nav10.png" alt="할리스몰"></a>
+              <p class="m-0">할리스몰</p>
+            </li>
+            <li class="col-md-2">
+              <a href="#"><img src="images/nav11.png" alt="멤버쉽"></a>
+              <p class="m-0">멤버십</p>
+            </li>
+            <li class="col-md-2">
+              <a href="#"><img src="images/nav12.png" alt="뉴스"></a>
+              <p class="m-0">이벤트 및 공지</p>
+            </li>
+            <li class="col-md-2">
+              <a href="#"><img src="images/nav13.png" alt="스토어"></a>
+              <p class="m-0">매장</p>
+            </li>
+            <li class="col-md-2">
+              <a href="#"></a><img src="images/nav14.png" alt="할리스는"></a>
+              <p class="m-0">할리스소개</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </div>
+  <div id="red" class="px-0 container-fluid">
+    <div class="slide">
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000">
+            <img src="images/slide1.jpg" class="d-block w-100" alt="디저트">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="images/slide2.jpg" class="d-block w-100" alt="디저트">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="스무디">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="images/slide4.jpg" class="d-block w-100" alt="페이코">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="images/slide5.jpg" class="d-block w-100" alt="곰표">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5 mb-5">
+      <div class="col-md-3">
+        <ul class="menu">
+          <li><img src="images/menu_tit.gif" alt="프렌차이즈"></li>
+          <li><a href="#"><img src="images/menu_img01.gif" alt="프렌차이즈"></a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 pl-6">
+        <p><img src="images/mall_tit.gif" alt="스토어"></p>
+        <p><img src="images/mall_txt_210224.png" alt="스토어"></p>
+        <ul class="mall">
+          <li><a href="#" class="text-decoration-none">
+              <img src="images/cake1.png" alt="당근케이크">
+              <p>촉촉한 당근케이크</p>
+            </a>
+          </li>
+          <li><a href="#" class="text-decoration-none">
+              <img src="images/cake2.png" alt="티라미슈">
+              <p>진한 마스카포네 티라미스</p>
+            </a>
+          </li>
+          <li><a href="#" class="text-decoration-none">
+              <img src="images/cake3.png" alt="치즈케이크">
+              <p>더블베리 바스크 치즈</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="store">
+          <li><img src="images/store_tit.gif" alt="매장찾기"></li>
+          <a href="#">
+            <li><img src="images/store_main_pc.jpg" alt="매장찾기"></li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="banner bg-black">
+          <li>
+          <a href="#">
+            <img src="images/img_banner.jpg" alt="멤버십">
+          </a>
+        </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="banner2 bg-black">
+          <a href="#">
+            <li><img src="images/img_banner2.jpg" alt="카드"></li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-5 mb-5">
+        <div class="col-md-3">
+          <ul class="academy">
+            <a href="#">
+              <li><img src="images/academy_tit.gif" class="mb-2"alt="Academy">
+                <p>할리스와 아카데미와 함께하는 즐거운 커피 여행!</p>
+                <p><img src="images/ico_arrow.gif" alt="바로가기">바로가기</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="solution">
+            <a href="#">
+              <li><img src="images/b2b_tit.gif" class="mb-2" alt="solution">
+                <p>할리스 F&B는 20년의 커피 노하우를 기반으로 한 할리스 B2B 솔루션을 소개합니다.</p>
+                <p><img src="images/ico_arrow.gif" alt="바로가기">바로가기</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="news">
+            <a href="#">
+              <li>
+                <img src="images/news_tit.gif" class="mb-2" alt="news">
+                  <img src="images/ico_arrow.gif" class="mb-2" alt="바로가기">
+                </li>
+            </a>
+                <a href="#">
+                  <li>
+                    <p><nobr>SKT 제휴서비스 종료 안내</nobr></p>
+                    <p>02-22</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    <p><nobr>개인정보처리방침 변경 안내</nobr></p>
+                    <p>10-06</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    <p><nobr>중간배당 기준일 공고</nobr></p>
+                    <p>10-14</p>
+                  </li>
+                </a>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="etc">
+            <a href="#">
+              <li>
+                <img src="images/img_etc01.gif" class="p-3" alt="창업안내">
+                <p>창업안내</p>
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <img src="images/img_etc02.gif" class="p-2" alt="아카데미">
+                <p>아카데미 강좌</p>
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <img src="images/img_etc03.gif" class="p-2" alt="고객문의">
+                <p>고객문의</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="red" class="px-0 container">
+     <div class="row pt-4 pl-3 pr-4">
+       <ul class="sns">
+         <li><img src="images/sns_tit.gif" alt="sns_tit"></li>
+         <li><img src="images/sns_facebook.gif" alt="sns_tit"></li>
+         <li><img src="images/sns_instagram.gif" alt="sns_tit"></li>
+         <li><img src="images/sns_blog.gif" alt="sns_tit"></li>
+       </ul>
+     </div>
+     
+    </div>
+    </div>
+    <div class="px-0 container-fluid">
+       <div class="footer">
+         <div id="footer-left" class="row pl-8">
+           <a href="#">
+             <b>개인정보처리방침｜</b></a>
+             <a href="#">서비스이용약관｜</a>
+             <a href="#">멤버십이용약관｜</a>
+             <a href="#">할리스카드이용약관｜</a>
+             <a href="#">고객문의｜</a>
+             <a href="#">고객설문｜</a>
+             <a href="#">사이트맵｜</a>
+             <a href="#">BI소개</a>
+             <p class="pt-3 m-0">법인명: (주) 케이지할리스에프앤비 대표자: 신유정 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호 <br>
+              주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)<br>
+              COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+            </p>
+         </div>
+         
+       </div>
+    </div>
+
+
+
 </body>
+
 </html>
